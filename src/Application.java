@@ -11,7 +11,9 @@ public class Application {
         FileManager fileManagerTXT = new TextManager();
         FileManager fileManagerCSV = new CsvManager();
 
+        System.out.println("TXT");
         List<Student> list1 = fileManagerTXT.read();
-       // List<Student> list2 = fileManagerCSV.read();
+        System.out.println("CSV");
+        List<Student> list2 = fileManagerCSV.read();
     }
 }

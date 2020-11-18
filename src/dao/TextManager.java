@@ -8,7 +8,7 @@ public class TextManager extends TextFileManager<Student> {
 
     @Override
     protected String getFileName() {
-        return "src/data/student.txt";
+        return "src/data/students.txt";
     }
 
     @Override

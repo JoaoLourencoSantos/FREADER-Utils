@@ -1,17 +1,17 @@
 package dao;
 
-import dao.base.TextFileManager;
+import dao.base.CsvFileManager;
 import domain.Student;
 
-public class CsvManager extends TextFileManager<Student> {
+public class CsvManager extends CsvFileManager<Student> {
     @Override
     protected String getFileName() {
-        return "src/data/student.csv";
+        return "src/data/students.csv";
     }
 
     @Override
     protected String getSplitSeparator() {
-        return "\t";
+        return ",";
     }
 
     @Override
